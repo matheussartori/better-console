@@ -1,6 +1,6 @@
 {
   "name": "@matheussartori/better-console",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "A JavaScript library to improve terminal debug outputs.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
