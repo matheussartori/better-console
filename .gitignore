@@ -3,3 +3,4 @@ dist
 src/test.ts
 .vscode
 .idea
+.pnpm-debug.log
