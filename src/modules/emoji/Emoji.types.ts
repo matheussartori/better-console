@@ -1,0 +1,13 @@
+export type Emoji =
+  | 'tangerine'
+  | 'redHeart'
+  | 'fire'
+  | 'faceWithPeekingEye'
+  | 'faceHoldingBackTears'
+  | 'heartHands'
+  | 'dottedLineFade'
+  | 'smilingFaceWithSmilingEyes'
+  | 'bomb'
+  | 'battery'
+  | 'lightbulb'
+  | 'flag:brazil'

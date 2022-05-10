@@ -1,0 +1,61 @@
+{
+  "name": "@matheussartori/better-console",
+  "version": "0.0.7",
+  "description": "A JavaScript library to improve terminal debug outputs.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "console"
+  ],
+  "scripts": {
+    "build": "rimraf dist; tsc --emitDeclarationOnly; babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
+    "debug": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/test.ts",
+    "lint-staged": "node node_modules/lint-staged/bin/lint-staged.js",
+    "prepublish": "pnpm build",
+    "prepare": "husky install"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheussartori/better-console.git"
+  },
+  "author": {
+    "name": "Matheus Sartori",
+    "email": "ms.sartori@outlook.com.br"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheussartori/better-console/issues"
+  },
+  "homepage": "https://github.com/matheussartori/better-console#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "date-fns": "^2.28.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.9",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "babel-preset-minify": "^0.5.1",
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  }
+}
